@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Runtime workspaces created by the skills in user projects
+usl-build/
+
+# Business documents kept in the private usl-academy-website repo
+# (course-content/00-foundation/), not shipped with the skills.
+COURSE.md
+SERVICE.md
+OFFER_DESIGN_FRAMEWORK.md
+
+# Reference book kept locally only. brand-strategy works without it.
+brand-strategy/Designing-Brand-Identity.pdf
