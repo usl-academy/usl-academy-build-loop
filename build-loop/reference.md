@@ -22,7 +22,7 @@ stage next, and keep the through-line intact from idea to build plan.
 | 3 | `/business-model` | 1, 2, plus buyer conversations when present | `3-business-model.md`, `3-business-plan-summary.md` | How does it sustain itself? Model-specific economics or ROI, price or investment, and the first acquisition or adoption test. |
 | 4 | `/offer-design` | 1, 2, 3, plus any real source material | `4-offer-design.md`, `4-offer-document.md` | What exactly is being sold? Niche, avatar, value stack, guarantee, launch order. |
 | 5 | `/brand-strategy` | 3, 4 | `5-brand-strategy.md` | What does it stand for, and what is it called? Positioning, voice, identity, and the offer name. |
-| 6 | `/landing-page` | 3, 4, 5, plus buyer conversations when present | `6-landing-page-copy.md`, `6-landing-page-build-sequence.md` | How is it experienced and sold? Adaptive page architecture, authored copy and visual direction, plus a verified build plan. |
+| 6 | `/landing-page` | 3, 4, 5, plus buyer conversations when present | `6-reference-board.md`, `6-landing-page-copy.md`, `6-landing-page-build-sequence.md` | How is it experienced and sold? Adaptive page architecture, authored copy and visual direction, plus a verified build plan. |
 | 7 | `/prd-generation` | 2, 4, 5, plus product-relevant Stage 6 decisions when present | `7-prd.md` | What is authorised to build? A provenance-preserving PRD with user/payer flows, test controls, quality requirements, and traceability. |
 | 8 | `/build-sequence` | 7 | `8-build-sequence.md` | How is it built safely? A readiness-audited, risk-first execution map for the actual builder. |
 | 9 (optional) | `/mcp-integration` | 7, 5, plus the shipped codebase | `9-mcp-prd.md`, `9-mcp-build-sequence.md` | Can Claude operate it? An MCP layer: expose the product as a connector, or wire in a third-party service. |
@@ -322,7 +322,7 @@ user. The bundle is the engagement's tangible output:
 | Business plan summary | `3-business-plan-summary.md` |
 | Offer document (stack, anchors, guarantee, launch order) | `4-offer-document.md` |
 | Brand foundation one-pager | `5-brand-strategy.md` |
-| Landing page copy plus build plan | `6-landing-page-copy.md`, `6-landing-page-build-sequence.md` |
+| Landing page copy plus build plan | `6-reference-board.md`, `6-landing-page-copy.md`, `6-landing-page-build-sequence.md` |
 | Product Requirements Document | `7-prd.md` |
 | Build sequence (risk-first code, low-code, or no-code execution map) | `8-build-sequence.md` |
 | MCP integration PRD and build sequence (only if Stage 9 was run) | `9-mcp-prd.md`, `9-mcp-build-sequence.md` |

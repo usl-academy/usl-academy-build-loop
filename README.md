@@ -36,7 +36,7 @@ Prefer to drive manually, or only need one stage? Every stage below still runs s
 | [`/business-model`](business-model/SKILL.md) | 3 | Routes to the actual economic model, calculates model-specific unit economics or internal ROI, triangulates price or investment, and designs the first acquisition or adoption test. |
 | [`/offer-design`](offer-design/SKILL.md) | 4 | Finds the strongest pocket of demand, then builds the offer: niche and avatar, the highest-value buyer conversation, creative commercial-model alternatives, an evidence-anchored value stack, risk reversal, offer test, and launch order. The only stage designed to span sessions. |
 | [`/brand-strategy`](brand-strategy/SKILL.md) | 5 | Discovery plus nine build steps: audience and brand architecture, foundation and identity direction, and naming of the brand, offer, or lead magnet through the appropriate sprint. |
-| [`/landing-page`](landing-page/SKILL.md) | 6 | Routes by goal, visitor state, trust, demonstration and audience path, then produces evidence-grounded copy, visual direction, and a verified implementation sequence. |
+| [`/landing-page`](landing-page/SKILL.md) | 6 | Routes by goal, visitor state, trust, demonstration and audience path; builds a dated reference board of the buyer's actual field (captured, measured, deconstructed, with the category default as a count) and gates on it before any visual thesis; then produces evidence-grounded copy, visual direction, and a verified implementation sequence. |
 | [`/prd-generation`](prd-generation/SKILL.md) | 7 | Reconciles validated scope, offer obligations, payer and user flows, test-in-v1 work, architecture, non-functional requirements, AI evaluation, and source-to-test traceability into a build-authorised PRD. |
 | [`/build-sequence`](build-sequence/SKILL.md) | 8 | Audits PRD readiness, then converts authorised requirements into a risk-first dependency map and verified code, low-code, or no-code execution sessions. |
 | [`/mcp-integration`](mcp-integration/SKILL.md) | 9 (optional) | After the product ships: designs its MCP layer, either exposing it as a claude.ai connector or Claude Code server, or wrapping a third-party API in MCP tools. Produces an MCP PRD plus its own build sequence. |
@@ -119,6 +119,7 @@ usl-build/
 ├── 4-offer-document.md
 ├── 5-brand-name.md                   # standalone Brand Naming Sprint only; does not complete Stage 5
 ├── 5-brand-strategy.md
+├── 6-reference-board.md        # + reference-board/ captures
 ├── 6-landing-page-copy.md
 ├── 6-landing-page-build-sequence.md
 ├── 7-prd.md

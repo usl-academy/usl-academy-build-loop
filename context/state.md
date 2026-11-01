@@ -39,3 +39,13 @@ pricing-strategy.md, which are inert without those files.
 This repository is for other people to install. The user decided on 2026-10-25 not to install it on
 their own machine, where the same skill names stay linked to usl-build-sequence. Do not run the
 installers there.
+
+## Ported from usl-build-sequence
+
+- 2026-11-02: landing-page gained a required reference-board step (Step 4) between the authorship
+  brief and the visual thesis, with a user gate on the board before the thesis. Method in
+  reference.md 2.6, template in 7.4, research lane in Section 0, evals Scenario 8, and a third
+  Stage 6 deliverable `usl-build/6-reference-board.md` listed in build-loop's stage table. The
+  worked example (one project's board with 32 third-party captures) stays in the private source
+  repository only, by the user's decision; this copy points to the published board instead. The
+  8.6 search-optimization line keeps this copy's wording.

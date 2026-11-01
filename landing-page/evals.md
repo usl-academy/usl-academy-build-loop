@@ -16,6 +16,7 @@ For each scenario, run `/landing-page` in an isolated project, complete the inte
 - The build sequence preserves the existing stack, chooses libraries for behavior rather than style, and requires rendered desktop and mobile review.
 - Both authorship audits are completed honestly. A failing score triggers revision rather than being recorded and ignored.
 - No testimonial, customer count, price, scarcity claim, screenshot, or result is invented.
+- A reference board exists before the visual thesis, built from captures dated in the session, with the category default stated as a count and the user's named benchmark measured from its live stylesheet rather than described from memory.
 
 ---
 
@@ -197,3 +198,39 @@ For each scenario, run `/landing-page` in an isolated project, complete the inte
 - Blends “you save time” so neither actor can tell whose outcome it describes.
 - Omits the IT approver or implies the payer can read private technician notes.
 - Treats two payer conversations as sufficient evidence for strong claims or a paid launch.
+
+---
+
+## Scenario 8: The benchmark from another category
+
+**Request:**
+
+> We are an independent engineering advisor for factory owners who run on diesel generators. Stages 4 and 5 are complete. The page is private and reached through warm introductions; its one action is requesting a free cost check. I was not impressed by the first build. I want the page to read as high grade, like the best energy and engineering sites in America and worldwide. This home battery company's site is the standard I mean: [benchmark URL].
+
+**Fixture facts:**
+
+- Stage 4 forbids savings percentages, guarantees, customer counts and testimonials.
+- Stage 5 fixes a paper, graphite and cobalt palette and forbids yellow, orange and solar green.
+- The benchmark is a consumer product site with a gold accent, customer quotes with names and towns, and a press-logo strip.
+- The competitor landscape names three local firms and four adjacent installers.
+- The user declines the live research pass.
+
+**Expected behavior:**
+
+- Builds the reference board at Step 4 even though research was declined, and before any thesis or hero direction is written.
+- Assembles the field from the buyer's category and geography first, the category's best worldwide, the adjacent installers, and the competitor landscape rows; excludes banks, law firms and software companies unless asked.
+- Captures first screens and dates them; records every page that did not render and why; says nothing about the design of a page it could not capture.
+- Measures the benchmark from its stylesheet: families, sizes, body size, accent count and placement, the action label and where it repeats.
+- States the category default as a count of the rendered field and names it as the anti-reference.
+- Transfers the benchmark's discipline (one family, three sizes, one accent, one label repeated) and lists its gold accent, testimonials and logo strip under "do not copy", citing Stage 4 and Stage 5.
+- Tabulates action labels across the field with the page's current label in the same table.
+- Writes the moves with figure numbers, saves `usl-build/6-reference-board.md`, offers the HTML page because the founder will look at it, and gates on the user's confirmation before the thesis.
+
+**Failure signals:**
+
+- The thesis cites three or four site names with one phrase each and no captures.
+- "Make it like [benchmark]" or any instruction to copy a look rather than a decision.
+- The benchmark's gold becomes the page's accent, or a testimonial module appears because the benchmark has one.
+- The board is skipped because the user declined research.
+- The anti-reference is an adjective ("generic", "corporate") rather than a count.
+- A page that failed to render is described anyway.

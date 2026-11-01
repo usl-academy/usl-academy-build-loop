@@ -24,7 +24,7 @@ Research has three legitimate jobs here: retrieve language or evidence the user 
 
 ### Protocol
 
-1. **Offer one batch.** Ask once during DIRECT: “I can run one focused pass for missing customer language, category conventions, proof norms, and current implementation options. Want me to?” If the user says to research automatically, do not ask again in the session.
+1. **Offer one batch.** Ask once during DIRECT: “I can run one focused pass for missing customer language, category conventions, proof norms, and current implementation options. Want me to?” If the user says to research automatically, do not ask again in the session. The reference board (Section 2.6) is a separate, required step; declining this pass does not skip it.
 2. **Use the available web capability.** Do not depend on one provider. If no web access exists, proceed and mark affected findings unverified.
 3. **Search narrow.** Use the named buyer, problem, category, geography, traffic source, and intended builder. Four to eight focused queries in one pass are better than four interruptions spread through the page.
 4. **Prefer primary evidence.** Buyer communities, review text, official competitor pages, official product documentation, primary research, and current platform documentation outrank affiliate roundups and generic “best landing pages” articles.
@@ -41,6 +41,7 @@ Research has three legitimate jobs here: retrieve language or evidence the user 
 | Category conventions | `[category] pricing`, `[competitor] landing page`, `[category] demo` | Familiar decision cues, repeated layouts, proof norms, and sameness to avoid |
 | Proof | `[problem] primary research`, `[category] industry report`, official case studies | Citable facts or the honest finding that no suitable public proof exists |
 | Implementation | Official documentation for the selected builder, primitive library, animation tool, or test tool | Current compatibility, accessibility features, maintenance cost, and source URL |
+| Reference field | `[category] [geography] website`, `[category] best designed site`, award galleries filtered to the category, the competitor landscape's named alternatives | The list of pages to capture for the reference board (Section 2.6); never a verdict on what the page should look like |
 
 Do not search “high-converting headline patterns” and copy the resulting formulas. Search the buyer’s language and the category’s visual habits, then make a decision.
 
@@ -305,6 +306,74 @@ Also capture one anti-reference:
 
 Do not say “make it like Apple,” “make it Stripe-like,” or “use Linear style.” Name the transferable decision: unusually high type contrast, a product demonstration before explanation, documentary photography, dense proof, or restrained motion.
 
+Fill this table from the reference board (2.6), and put the figure number of the capture each row refers to in the first column. A row without a capture is a memory, and memories do not go on the board.
+
+### 2.6 Reference board
+
+The board is the field, looked at. It exists because the quiet failure of this stage is a thesis that cites four good names with one phrase each, gets built faithfully, and still looks like every other page in the category. Nobody captured the pages, so nobody saw that the thesis was the category default with better vocabulary. Written at Step 4, before the thesis, and confirmed by the user before the thesis exists.
+
+The board records decisions, never looks. No capture is copied into the page. The benchmark's palette does not override Stage 5. Forbidden claims from Stage 4 filter every transfer.
+
+#### The field
+
+Twenty to fifty pages. Fewer than twenty and the category default is an impression; more than fifty and nobody reads the board. Draw from, in this order:
+
+1. The buyer's category in the buyer's geography. These are the pages the buyer has already seen, and the page is measured against them whether or not you look.
+2. The best of the category worldwide. Where the category's quality ceiling is.
+3. The adjacent categories the buyer also sees: the suppliers, the regulators, the tools, the publications.
+4. Every alternative named in `usl-build/competitor-landscape.md`.
+5. The two pages the user named at Step 1, and any benchmark the user names later. A named benchmark goes to the top of the board, and its measurements lead the findings.
+
+Pages outside the buyer's world (banks, law firms, software companies admired by designers) are excluded unless the user asks for them. They produce a thesis the buyer does not recognise.
+
+#### Capture
+
+- First screen of every page at desktop width (1440 px is the default), dated. Full page for everything shortlisted.
+- Save the captures to `usl-build/reference-board/` named by site, and number the figures in the order the board discusses them.
+- Record every page that did not render and why: cookie wall, region gate, bot check, blank first paint, access denied. A cookie wall over the hero is a finding about that site, not a reason to skip it.
+- Never describe a page from memory or from its own marketing copy. If it cannot be captured, it is listed under "did not render" and nothing is said about its design.
+
+#### Measure the benchmark
+
+For the user's named benchmark, and for each shortlisted page where it matters, read the live stylesheet rather than estimating:
+
+| Measure | Record |
+|---|---|
+| Type families | How many, which, and which roles each plays |
+| Type scale | Headline, section title and body sizes in px |
+| Accent colours | How many, and the exact places each is spent |
+| Ground and text | The two colours that carry everything else |
+| Primary action | The label, its word count, every place it repeats, and what it names: the outcome, the person, the meeting, the channel |
+| Shape | Button radius, rule weights, card use, and whether photographs carry text over them |
+
+The measurements are what transfer. "One family at three sizes, body 18 px, one accent spent twice on a whole page, one four-word label in the top bar and the close" is a thesis input. "Calm and premium" is not.
+
+#### State the category default as a count
+
+Look at the first screens together and count what most of them do. "Thirty-one of forty-one open with a full-bleed photograph, a tagline and a coloured button." That count is the anti-reference, verified, and it is the sentence the thesis refuses first. Without the count, the anti-reference is an opinion, and an opinion gets overruled in the build.
+
+#### Shortlist and deconstruct
+
+Six to ten pages that hold up. For each, the Section 2.5 table: what specifically works, the decision underneath it, the transferable principle, what must not be copied, with the figure number. "What must not be copied" is checked against Stage 4's forbidden claims and Stage 5's colour and typography direction before the row is written, so the board never recommends a forbidden thing.
+
+#### Tabulate the action labels
+
+One table across the field: site, primary action label, word count, where it appears, what it names. Put the current or proposed label for this page in the same table so the comparison is visible. Labels in the field cluster at two to four words, a verb and the thing you get; a label that names the channel or carries the product's full name stands out in the table before anyone argues about it.
+
+#### Write the moves
+
+Five to seven concrete changes the thesis will take. Each one names the shortlisted figure it comes from and the Stage 5 rule it was checked against. A move is specific enough to be built: "body to 18 px and a 60-character measure", not "more whitespace". Moves that would break a Stage 4 or Stage 5 rule are listed under "do not copy" instead, so the reader can see they were considered.
+
+#### Record, page and gate
+
+Write `usl-build/6-reference-board.md` with the template in Section 7.4. When someone other than the user will look at the board (the founder, the designer, the client), render it as one self-contained HTML page with the captures embedded, in the shape of the Section 7.4 template, and report where it is published. The markdown is the record; the page is how people look at it. A published example of the shape: https://claude.ai/artifact/XdkzJdDKFZJHmQDep3oLP5 (private until shared by its owner).
+
+Then gate. The user confirms the benchmark, the shortlist, the anti-reference count and the moves. Record what they changed, and only then write the thesis.
+
+#### Currency
+
+A board is evidence of a field at a date. Reuse it for twelve months. After that, or when the category visibly shifts, rebuild it. Refreshing the benchmark row alone is allowed when the user names a new benchmark.
+
 ---
 
 ## SECTION 3: VISUAL THESIS AND HERO DIRECTIONS
@@ -329,6 +398,8 @@ Do not say “make it like Apple,” “make it Stripe-like,” or “use Linear
 Weak thesis: “Modern, clean, premium.”
 
 Useful thesis: “A field notebook for operators: dense proof, annotated real artifacts, narrow editorial type, and one safety-orange action color.”
+
+Every line of the thesis names the board figure it was drawn from or the category default it refuses. A line that names neither is a preference, and preferences are what the build sequence quietly replaces with the template.
 
 ### 3.2 The three hero directions
 
@@ -656,7 +727,7 @@ Do not default to highly styled marketing packs. If a distinctive third-party bl
 - **Mobbin or equivalent real-interface libraries:** study real composition and flows, not component code.
 - **Official builder galleries:** inspect platform-native behavior and maintenance constraints.
 
-Reference libraries answer “what decisions exist?” They do not answer “what should this brand look like?”
+Reference libraries answer “what decisions exist?” They do not answer “what should this brand look like?” They do not replace the reference board either: the board is the buyer's actual field, captured and dated, and a library is everyone's.
 
 ---
 
@@ -771,8 +842,9 @@ Reference libraries answer “what decisions exist?” They do not answer “wha
 
 **Selected hero direction:**
 **Why it won:**
-**References and transferable decisions:**
-**Anti-reference:**
+**Reference board:** [path and capture date]
+**Transferable decisions taken:** [each with the board figure it comes from]
+**Anti-reference:** [the category default, as the count from the board]
 
 ---
 
@@ -899,6 +971,96 @@ Keep the sequence short. Group compatible modules, but keep form plumbing, mobil
 
 Name the existing theme or builder, global styles, reusable pattern, plugin dependency, and cache implications. Do not prescribe a new builder without user approval.
 
+### 7.4 Reference Board
+
+The record written at Step 4. Captures live beside it in `usl-build/reference-board/`. When the board will be looked at by someone other than the user, render the same content as one self-contained HTML page with the captures embedded; A published example of a finished one is https://claude.ai/artifact/XdkzJdDKFZJHmQDep3oLP5 (private until shared by its owner). It is one project's board, and none of its findings transfer to another project.
+
+```markdown
+# Reference Board
+## Stage 6 Output | USL Academy
+
+**Captured:** [date]
+**Viewport:** [first-screen width; full page for the shortlist]
+**Field:** [count captured] / [count rendered] / [count shortlisted]
+**Named benchmark:** [site, or "none named"]
+**Forbidden on this page:** [from Stage 4 and Stage 5, so every transfer below is read against it]
+
+---
+
+## 1. VERDICT
+
+[Three sentences. Where the quality in this field actually is. What the pages that hold up share. What the current or planned page lacks.]
+
+---
+
+## 2. THE BENCHMARK
+
+[Figure numbers of its captures]
+
+| Measure | Reading |
+|---|---|
+| Type families | |
+| Type scale | |
+| Accent colours | |
+| Ground and text | |
+| Primary action | |
+| Shape | |
+
+**Transfers:** [the discipline, in one line]
+**Does not transfer:** [checked against Stage 4 and Stage 5]
+
+---
+
+## 3. THE CATEGORY DEFAULT
+
+[Count] of [rendered] [what most of the field does on the first screen]. This is the anti-reference.
+
+---
+
+## 4. SHORTLIST
+
+| Fig. | Reference | What specifically works | Underlying decision | Transferable principle | What must not be copied |
+|---|---|---|---|---|---|
+| | | | | | |
+
+---
+
+## 5. ACTION LABELS
+
+| Site | Primary action | Words | Where it appears | What it names |
+|---|---|---|---|---|
+| | | | | |
+| This page, current or proposed | | | | |
+
+---
+
+## 6. MOVES THE THESIS TAKES
+
+| # | Move | From figure | Checked against |
+|---|---|---|---|
+| 1 | | | |
+
+---
+
+## 7. LOOKED AT, NOT RECOMMENDED
+
+| Fig. | Site | One line |
+|---|---|---|
+| | | |
+
+---
+
+## 8. DID NOT RENDER
+
+[Site: reason], for every page that could not be captured.
+
+---
+
+## 9. CONFIRMED BY
+
+[Who confirmed the board, on what date, and what they changed before the thesis was written.]
+```
+
 ---
 
 ## SECTION 8: VERIFICATION STANDARD
@@ -969,6 +1131,7 @@ Set numerical budgets only when the platform and project make them meaningful. V
 4. Which visual choice exists because a library made it easy rather than because the thesis required it?
 5. If motion, gradients, and rounded cards disappeared, would the page still have an identity?
 6. If payer and user differ, can each person tell what decision is theirs, what evidence applies to them, and what happens after they act?
+7. Placed beside the board's category-default captures, does the rendered first screen read as one of them?
 
 ---
 
